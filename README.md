@@ -21,7 +21,7 @@ HistoricalVolatilityCalculator\bin\Debug\HistoricalVolatilityCalculator.exe
 The logic is here:
 ```
 HistoricalVolatilityCalculator/VolatilityCalculator.cs
-HistoricalVolatilityCalculator/form1.cs
+HistoricalVolatilityCalculator/Form1.cs
 ```
 To get the .csv stock information you can either go to yahoo finance (here's the link for Amazon's historical info)
 http://finance.yahoo.com/q/hp?s=AMZN+Historical+Prices
