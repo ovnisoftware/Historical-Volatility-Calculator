@@ -15,12 +15,14 @@ I got the mathematical formulas to calculate the historical volatility from C.B.
 http://www.amazon.com/Mathematics-Options-Trading-C-B-Reehl/dp/0071445285/ref=sr_1_1?ie=UTF8&qid=1414070824&sr=8-1&keywords=mathematics+of+options+trading
 
 If you want to run the .exe without compiling the source code, it's here:
+```
 HistoricalVolatilityCalculator\bin\Debug\HistoricalVolatilityCalculator.exe
-
+```
 The logic is here:
+```
 HistoricalVolatilityCalculator/VolatilityCalculator.cs
 HistoricalVolatilityCalculator/form1.cs
-
+```
 To get the .csv stock information you can either go to yahoo finance (here's the link for Amazon's historical info)
 http://finance.yahoo.com/q/hp?s=AMZN+Historical+Prices
 
