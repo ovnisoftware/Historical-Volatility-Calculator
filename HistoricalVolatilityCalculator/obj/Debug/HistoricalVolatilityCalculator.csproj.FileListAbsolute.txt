@@ -1,0 +1,9 @@
+c:\users\tester\documents\visual studio 2013\Projects\HistoricalVolatilityCalculator\HistoricalVolatilityCalculator\bin\Debug\HistoricalVolatilityCalculator.exe.config
+C:\Users\tester\Documents\Visual Studio 2013\Projects\HistoricalVolatilityCalculator\HistoricalVolatilityCalculator\bin\Debug\HistoricalVolatilityCalculator.exe
+C:\Users\tester\Documents\Visual Studio 2013\Projects\HistoricalVolatilityCalculator\HistoricalVolatilityCalculator\bin\Debug\HistoricalVolatilityCalculator.pdb
+C:\Users\tester\Documents\Visual Studio 2013\Projects\HistoricalVolatilityCalculator\HistoricalVolatilityCalculator\obj\Debug\HistoricalVolatilityCalculator.csprojResolveAssemblyReference.cache
+C:\Users\tester\Documents\Visual Studio 2013\Projects\HistoricalVolatilityCalculator\HistoricalVolatilityCalculator\obj\Debug\HistoricalVolatilityCalculator.Form1.resources
+C:\Users\tester\Documents\Visual Studio 2013\Projects\HistoricalVolatilityCalculator\HistoricalVolatilityCalculator\obj\Debug\HistoricalVolatilityCalculator.Properties.Resources.resources
+C:\Users\tester\Documents\Visual Studio 2013\Projects\HistoricalVolatilityCalculator\HistoricalVolatilityCalculator\obj\Debug\HistoricalVolatilityCalculator.csproj.GenerateResource.Cache
+C:\Users\tester\Documents\Visual Studio 2013\Projects\HistoricalVolatilityCalculator\HistoricalVolatilityCalculator\obj\Debug\HistoricalVolatilityCalculator.exe
+C:\Users\tester\Documents\Visual Studio 2013\Projects\HistoricalVolatilityCalculator\HistoricalVolatilityCalculator\obj\Debug\HistoricalVolatilityCalculator.pdb
