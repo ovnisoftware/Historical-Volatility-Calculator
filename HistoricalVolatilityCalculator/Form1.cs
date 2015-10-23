@@ -38,7 +38,6 @@ namespace HistoricalVolatilityCalculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             openFileDialog1.Filter = "Comma-Delimited Files (*.csv) |*.csv|All Files (*.*)|*.*";
             openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             openFileDialog1.FileName = "";
@@ -48,19 +47,25 @@ namespace HistoricalVolatilityCalculator
                 button1.Enabled = true;
                 dateTimePicker1.Enabled = true;
                 dateTimePicker2.Enabled = true;
+
                 //clear labels & reset dates
                 reset();
+
                 //Clears previous rows
                 dataGridView1.Rows.Clear();
+
                 //Populates prices List
                 prices = VolatilityCalculator.parseCSV(openFileDialog1.FileName, (int)numericUpDownSampSize.Value);
+
                 //populates datagridview
                 foreach (Price price in prices)
                 {
                     dataGridView1.Rows.Add(price.Date, price.Close, price.Diff, price.Ln, price.Square);
                 }
+
                 //lnSum is the sum of the ln column in the dataGrid
                 double lnSum = 0;
+
                 //lnSquaredSum is the sum of the ln^2 column in the dataGrid
                 double lnSquaredSum = 0;
                 for (int i = 0; i < dataGridView1.Rows.Count; ++i)
@@ -68,10 +73,13 @@ namespace HistoricalVolatilityCalculator
                     lnSum += Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value);
                     lnSquaredSum += Convert.ToDouble(dataGridView1.Rows[i].Cells[4].Value);
                 }
+
                 //Subtract by 1 to account for not being able to make calculations for the most recent sample
                 int sampleSize = (int)numericUpDownSampSize.Value - 1;
+
                 //calculates standard deviation of the sample
                 double sampleStDev = VolatilityCalculator.calculateSampleStDev(lnSum, lnSquaredSum, sampleSize);
+                
                 //calculates annual standard deviation
                 annualStDev = VolatilityCalculator.calculateAnnualStDev(sampleStDev, VolatilityCalculator.CalculateTimeFactor(comboBox1.SelectedIndex));
 

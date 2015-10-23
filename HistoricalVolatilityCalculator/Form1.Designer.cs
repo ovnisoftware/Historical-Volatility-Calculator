@@ -62,6 +62,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.lblProbability = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSampSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTarget)).BeginInit();
@@ -116,9 +118,9 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(357, 9);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(93, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Choose";
+            this.button2.Text = "Choose File";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -157,7 +159,7 @@
             0,
             0});
             this.numericUpDownSampSize.Name = "numericUpDownSampSize";
-            this.numericUpDownSampSize.Size = new System.Drawing.Size(75, 22);
+            this.numericUpDownSampSize.Size = new System.Drawing.Size(93, 22);
             this.numericUpDownSampSize.TabIndex = 7;
             this.numericUpDownSampSize.Value = new decimal(new int[] {
             11,
@@ -186,7 +188,7 @@
             "Monthly"});
             this.comboBox1.Location = new System.Drawing.Point(357, 68);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(75, 24);
+            this.comboBox1.Size = new System.Drawing.Size(93, 24);
             this.comboBox1.TabIndex = 9;
             // 
             // label4
@@ -409,11 +411,34 @@
             this.lblProbability.Size = new System.Drawing.Size(0, 16);
             this.lblProbability.TabIndex = 32;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(510, 13);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(195, 48);
+            this.label13.TabIndex = 33;
+            this.label13.Text = "Calculate the annual st. dev.\r\nof all .csv files in selected folder\r\nand output t" +
+    "o .csv file";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(708, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(132, 28);
+            this.button3.TabIndex = 34;
+            this.button3.Text = "Choose Folder";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 391);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.lblProbability);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button1);
@@ -484,6 +509,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lblProbability;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button3;
     }
 }
 
