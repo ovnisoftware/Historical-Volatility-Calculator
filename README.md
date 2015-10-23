@@ -3,12 +3,11 @@ Historical-Volatility-Calculator
 
 Winforms app written in C# to calculate a stock's historical volatility using Yahoo Finance .CSV file
 
-This program can tell you what the probability of a stock being above or below at a certain price at a chosen date
+This app can tell you the probability of a stock being above or below at a certain price at a chosen date
 in the future.  In the image example below, I calculated the probabilty of Amazon's stock being over 320 by 11/14/14
 which was 36.05%.
 
-Here's what the program looks like:
-http://ovnisoftware.com/images/Historical_Vol_Calculator.png
+![GitHub Logo](https://github.com/ovnisoftware/Historical-Volatility-Calculator/blob/master/Calculator.png)
 
 I got the mathematical formulas to calculate the historical volatility from C.B. Reehl's book
 'The Mathematics of Options Trading' and converted them into C#.
@@ -26,6 +25,6 @@ HistoricalVolatilityCalculator/Form1.cs
 To get the .csv stock information you can either go to yahoo finance (here's the link for Amazon's historical info)
 http://finance.yahoo.com/q/hp?s=AMZN+Historical+Prices
 
-or you can use another program I wrote called the Yahoo Finance Quote Downloader that is also on Github.
+or you can use another app I wrote called the Yahoo Finance Quote Downloader that is also on Github.
 
-This was built with Visual Studio 2013, I included all the files in the solution folder.  This program targets .NET 4.5 so it will not work on XP, but will work on Vista, Windows 7 and Windows 8.
+This was built with Visual Studio 2013, I included all the files in the solution folder.  This program targets .NET 4.5 so it will not work on XP, but will work on Vista, Windows 7, Windows 8 and Windows 10.
